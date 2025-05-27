@@ -29,5 +29,10 @@ A web-based platform to simplify and accelerate machine learning experimentation
 ```bash
 git clone https://github.com/your-username/ml-experimentation-platform.git
 cd ml-experimentation-platform
+pip install -r requirements.txt
+streamlit run app.py
+
+
+
 
 **Made with ❤️ by Harshit**
