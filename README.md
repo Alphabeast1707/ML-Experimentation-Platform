@@ -2,9 +2,6 @@
 
 A web-based platform to simplify and accelerate machine learning experimentation. Built for data scientists and ML enthusiasts to upload datasets, train multiple models, compare performance, and visualize results — all in one place.
 
-## 🌐 Live Demo
-
-👉 [Try it on Heroku](https://ml-experimentation-platform-3d86452b8fc9.herokuapp.com/)
 
 ## 🚀 Features
 
