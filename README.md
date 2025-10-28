@@ -32,4 +32,4 @@ streamlit run app.py
 
 
 
-**Made with ❤️ by Harshit & Aditiya**
+**Made with ❤️ by Harshit & Aditya**
