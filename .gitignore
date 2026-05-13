@@ -1,44 +1,37 @@
-# Python
+# NeuralForge
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
 *.egg-info/
-.installed.cfg
-*.egg
+dist/
+build/
+.eggs/
 
-# Virtual Environment
+# Environment
+.env
+.venv/
+env/
 venv/
 ENV/
-env/
 
-# IDE files
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
-
-# OS specific files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
-# Heroku
-.env.local
+# Data
+uploads/
+sample_data/
+*.csv
+*.xlsx
+*.xls
+
+# Node
+node_modules/
+
+# Misc
+*.log
+.cache/

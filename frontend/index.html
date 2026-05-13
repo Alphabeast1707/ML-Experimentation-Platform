@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DataForge — A next-generation ML Experimentation Platform. Upload data, train models, compare results, and get AI-powered insights.">
+    <title>DataForge — ML Experimentation Platform</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/globals.css?v=3">
+    <link rel="stylesheet" href="/static/css/components.css?v=3">
+    <link rel="stylesheet" href="/static/css/animations.css?v=3">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+    <!-- Background Orbs -->
+    <div class="bg-particles">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Fixed Top Navigation -->
+    <nav class="topnav" id="topnav">
+        <div class="topnav-inner">
+            <!-- Logo -->
+            <a class="topnav-brand" href="#" onclick="navigateTo('dashboard'); return false;">
+                <span class="topnav-logo">⚡</span>
+                <span class="topnav-name">DataForge</span>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="topnav-links" id="topnav-links">
+                <div class="nav-item active" data-page="dashboard" onclick="navigateTo('dashboard')">
+                    <span class="nav-item-icon">◉</span>
+                    <span>Dashboard</span>
+                </div>
+                <div class="nav-item" data-page="data" onclick="navigateTo('data')">
+                    <span class="nav-item-icon">◫</span>
+                    <span>Data</span>
+                </div>
+                <div class="nav-item" data-page="pipeline" onclick="navigateTo('pipeline')">
+                    <span class="nav-item-icon">⬡</span>
+                    <span>Pipeline</span>
+                </div>
+                <div class="nav-item" data-page="arena" onclick="navigateTo('arena')">
+                    <span class="nav-item-icon">△</span>
+                    <span>Arena</span>
+                </div>
+                <div class="nav-item" data-page="experiments" onclick="navigateTo('experiments')">
+                    <span class="nav-item-icon">◇</span>
+                    <span>Experiments</span>
+                    <span class="nav-item-badge" id="exp-count" style="display:none">0</span>
+                </div>
+            </div>
+
+            <!-- CTA Pill -->
+            <div class="topnav-actions">
+                <div class="nav-item nav-cta" data-page="copilot" onclick="navigateTo('copilot')">
+                    <span class="nav-item-icon">✦</span>
+                    <span>AI Copilot</span>
+                </div>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Toggle menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                    <rect y="3" width="20" height="2" rx="1"/>
+                    <rect y="9" width="20" height="2" rx="1"/>
+                    <rect y="15" width="20" height="2" rx="1"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- App Layout -->
+    <div class="app-layout">
+        <!-- Main Content -->
+        <main class="main-content" id="main-content">
+            <div id="page-container"></div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/js/api.js?v=3"></script>
+    <script src="/static/js/utils.js?v=3"></script>
+    <script src="/static/js/pages/dashboard.js?v=3"></script>
+    <script src="/static/js/pages/data.js?v=3"></script>
+    <script src="/static/js/pages/pipeline.js?v=3"></script>
+    <script src="/static/js/pages/arena.js?v=3"></script>
+    <script src="/static/js/pages/experiments.js?v=3"></script>
+    <script src="/static/js/pages/copilot.js?v=3"></script>
+    <script src="/static/js/app.js?v=3"></script>
+</body>
+</html>
+
